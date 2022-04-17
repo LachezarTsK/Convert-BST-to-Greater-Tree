@@ -13,7 +13,7 @@ public class Solution {
         TreeNode current = root;
         int sum = 0;
 
-        while (!stack.isEmpty()) {
+        while (!stack.isEmpty() || current != null) {
             while (current != null) {
                 stack.push(current);
                 current = current.right;
